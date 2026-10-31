@@ -1,0 +1,9 @@
+{
+  "name": "breast-cancer-ml-report",
+  "private": true,
+  "description": "Generates reports/Breast_Cancer_ML_Report.docx from the pipeline outputs",
+  "scripts": { "report": "node src/build_report.js" },
+  "dependencies": {
+    "docx": "^9.7.2"
+  }
+}

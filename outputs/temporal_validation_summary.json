@@ -1,0 +1,22 @@
+{
+  "best_model": "Logistic Regression",
+  "early_n": 451,
+  "late_n": 194,
+  "early_malignant_rate": 0.38802660753880264,
+  "late_malignant_rate": 0.29381443298969073,
+  "random_split_test": {
+    "accuracy": 0.9612403100775194,
+    "precision": 0.9767441860465116,
+    "recall": 0.9130434782608695,
+    "f1": 0.9438202247191011,
+    "roc_auc": 0.997118910424306
+  },
+  "temporal_holdout_test": {
+    "accuracy": 0.9896907216494846,
+    "precision": 0.9824561403508771,
+    "recall": 0.9824561403508771,
+    "f1": 0.9824561403508771,
+    "roc_auc": 0.9991035984120886
+  },
+  "auc_gap": -0.0019846879877826185
+}

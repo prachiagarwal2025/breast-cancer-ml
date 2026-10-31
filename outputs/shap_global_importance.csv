@@ -1,0 +1,10 @@
+,mean_abs_shap_value
+bare_nuclei,1.309338027024647
+clump_thickness,0.9899188145108366
+uniformity_cell_shape,0.8600546219494282
+uniformity_cell_size,0.6169463868442496
+mitoses,0.4205304726388446
+normal_nucleoli,0.3356823810008587
+bland_chromatin,0.3252653944564827
+marginal_adhesion,0.2887614224118207
+single_epithelial_cell_size,0.0355045783802075

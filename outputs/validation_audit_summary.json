@@ -1,0 +1,263 @@
+{
+  "A_duplicates": {
+    "patients": 645,
+    "distinct_feature_vectors": 442,
+    "patients_sharing_a_vector_with_another_patient": 245,
+    "label_conflicting_vectors": 0,
+    "random_split_test_by_twin_status": {
+      "test_n": 129,
+      "test_patients_with_exact_twin_in_train": 50,
+      "test_patients_novel": 79,
+      "auc_all": 0.997118910424306,
+      "twin": {
+        "n": 50,
+        "n_malignant": 0,
+        "errors_at_0.5": 0
+      },
+      "novel": {
+        "n": 79,
+        "n_malignant": 46,
+        "errors_at_0.5": 5,
+        "auc": 0.9927536231884058,
+        "auc_ci95": [
+          0.9779140786749483,
+          1.0
+        ]
+      }
+    },
+    "oof_auc_random_10fold_all_data": 0.9955435417884277,
+    "oof_auc_group_10fold_all_data": 0.9956270351507055
+  },
+  "B_temporal": {
+    "single_cut_by_clock_and_fraction": {
+      "id_order": {
+        "train_50pct": {
+          "train_n": 322,
+          "test_n": 323,
+          "test_malignant_rate": 0.3157894736842105,
+          "auc": 0.997781918197143,
+          "auc_ci95": [
+            0.9933592008765814,
+            1.0
+          ],
+          "test_share_with_exact_twin_in_train": 0.3622291021671827,
+          "auc_on_novel_vectors_only": 0.9952865761689291,
+          "n_novel": 206
+        },
+        "train_60pct": {
+          "train_n": 387,
+          "test_n": 258,
+          "test_malignant_rate": 0.3178294573643411,
+          "auc": 0.9976441241685144,
+          "auc_ci95": [
+            0.9928756167864197,
+            1.0
+          ],
+          "test_share_with_exact_twin_in_train": 0.4069767441860465,
+          "auc_on_novel_vectors_only": 0.9941600824458949,
+          "n_novel": 153
+        },
+        "train_70pct": {
+          "train_n": 451,
+          "test_n": 194,
+          "test_malignant_rate": 0.29381443298969073,
+          "auc": 0.9991035984120886,
+          "auc_ci95": [
+            0.9966602308226312,
+            1.0
+          ],
+          "test_share_with_exact_twin_in_train": 0.4020618556701031,
+          "auc_on_novel_vectors_only": 0.9979185251263752,
+          "n_novel": 116
+        },
+        "train_80pct": {
+          "train_n": 516,
+          "test_n": 129,
+          "test_malignant_rate": 0.24031007751937986,
+          "auc": 1.0,
+          "auc_ci95": [
+            0.9999999999999999,
+            1.0
+          ],
+          "test_share_with_exact_twin_in_train": 0.4573643410852713,
+          "auc_on_novel_vectors_only": 1.0,
+          "n_novel": 70
+        }
+      },
+      "raw_file_order": {
+        "train_50pct": {
+          "train_n": 322,
+          "test_n": 323,
+          "test_malignant_rate": 0.25386996904024767,
+          "auc": 0.9994433761765004,
+          "auc_ci95": [
+            0.9982144045385153,
+            1.0
+          ],
+          "test_share_with_exact_twin_in_train": 0.3219814241486068,
+          "auc_on_novel_vectors_only": 0.9990208296243546,
+          "n_novel": 219
+        },
+        "train_60pct": {
+          "train_n": 387,
+          "test_n": 258,
+          "test_malignant_rate": 0.2558139534883721,
+          "auc": 0.9996054292929293,
+          "auc_ci95": [
+            0.9984799098526996,
+            1.0
+          ],
+          "test_share_with_exact_twin_in_train": 0.35271317829457366,
+          "auc_on_novel_vectors_only": 0.9992499249924992,
+          "n_novel": 167
+        },
+        "train_70pct": {
+          "train_n": 451,
+          "test_n": 194,
+          "test_malignant_rate": 0.2422680412371134,
+          "auc": 0.9992763062671878,
+          "auc_ci95": [
+            0.9970437412272041,
+            1.0
+          ],
+          "test_share_with_exact_twin_in_train": 0.4690721649484536,
+          "auc_on_novel_vectors_only": 0.9981003039513678,
+          "n_novel": 103
+        },
+        "train_80pct": {
+          "train_n": 516,
+          "test_n": 129,
+          "test_malignant_rate": 0.24806201550387597,
+          "auc": 1.0,
+          "auc_ci95": [
+            0.9999999999999999,
+            1.0
+          ],
+          "test_share_with_exact_twin_in_train": 0.4728682170542636,
+          "auc_on_novel_vectors_only": 1.0,
+          "n_novel": 68
+        }
+      }
+    },
+    "rolling_origin_id_order": [
+      {
+        "train_n": 245,
+        "test_n": 100,
+        "test_malignant": 43,
+        "auc": 0.9967360261117911
+      },
+      {
+        "train_n": 345,
+        "test_n": 100,
+        "test_malignant": 32,
+        "auc": 0.9944852941176471
+      },
+      {
+        "train_n": 445,
+        "test_n": 100,
+        "test_malignant": 35,
+        "auc": 0.9978021978021978
+      },
+      {
+        "train_n": 545,
+        "test_n": 100,
+        "test_malignant": 26,
+        "auc": 0.9999999999999999
+      }
+    ],
+    "model_selection_on_early_cohort_only": {
+      "cv_auc": {
+        "Logistic Regression": 0.9929747207524986,
+        "SVM (RBF)": 0.9827886710239652,
+        "Random Forest": 0.9908116332952934,
+        "Gradient Boosting": 0.989657900197116,
+        "K-Nearest Neighbors": 0.9912082425562818
+      },
+      "winner": "Logistic Regression"
+    },
+    "threshold_procedure_applied_temporally": {
+      "threshold_from_early_oof": 0.14569946793069632,
+      "late_at_that_threshold": {
+        "tp": 56,
+        "fn": 1,
+        "fp": 4,
+        "tn": 133
+      },
+      "late_at_0.5": {
+        "tp": 56,
+        "fn": 1,
+        "fp": 1,
+        "tn": 136
+      }
+    }
+  },
+  "C_threshold": {
+    "threshold_across_50_cv_shuffles": {
+      "min": 0.03791026680651432,
+      "median": 0.05239281315156408,
+      "max": 0.07179176386141972
+    },
+    "threshold_is_set_by_one_training_patient": {
+      "committed_threshold": 0.05747037351326509,
+      "train_benign_flagged_at_threshold": 22,
+      "train_benign_total": 330
+    },
+    "test_confusion_by_threshold": [
+      {
+        "threshold": "0.5",
+        "tp": 42,
+        "fn": 4,
+        "fp": 1,
+        "tn": 82,
+        "sensitivity": 0.9130434782608695,
+        "sensitivity_ci95_exact": [
+          0.7920826751160522,
+          0.9757969291970654
+        ],
+        "specificity": 0.9879518072289156,
+        "specificity_ci95_exact": [
+          0.9346916264486556,
+          0.999695012686953
+        ],
+        "ppv_in_this_test_set": 0.9767441860465116
+      },
+      {
+        "threshold": "0.0575",
+        "tp": 46,
+        "fn": 0,
+        "fp": 7,
+        "tn": 76,
+        "sensitivity": 1.0,
+        "sensitivity_ci95_exact": [
+          0.9229381729480993,
+          1.0
+        ],
+        "specificity": 0.9156626506024096,
+        "specificity_ci95_exact": [
+          0.8339233952441926,
+          0.9654177096214369
+        ],
+        "ppv_in_this_test_set": 0.8679245283018868
+      }
+    ],
+    "ppv_at_other_prevalences_using_committed_threshold": {
+      "prevalence_1pct": 0.10695876288659789,
+      "prevalence_5pct": 0.38425925925925913,
+      "prevalence_10pct": 0.5684931506849314,
+      "prevalence_36pct": 0.8696158323632129
+    },
+    "ppv_note": "assumes sensitivity=1.0 and specificity as measured on this test set; both are uncertain (see exact CIs). Illustrates why a precision measured at 36% prevalence does not transfer."
+  },
+  "D_single_feature_auc_all_data_no_fitting": {
+    "clump_thickness": 0.913459129999165,
+    "uniformity_cell_size": 0.9743466644401771,
+    "uniformity_cell_shape": 0.9728437839191785,
+    "marginal_adhesion": 0.8967239291976288,
+    "single_epithelial_cell_size": 0.9192097353260414,
+    "bare_nuclei": 0.944414294063622,
+    "bland_chromatin": 0.9402709359605912,
+    "normal_nucleoli": 0.8885937630458378,
+    "mitoses": 0.709944059447274,
+    "_sum_of_all_nine_features_no_model": 0.9946459881439426
+  }
+}

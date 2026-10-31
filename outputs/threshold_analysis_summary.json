@@ -1,0 +1,14 @@
+{
+  "best_model": "Logistic Regression",
+  "tuning_method": "threshold chosen from 10-fold CV out-of-fold predictions on the training set only; applied to the test set exactly once below",
+  "default_threshold": 0.5,
+  "default_threshold_test_precision": 0.9767441860465116,
+  "default_threshold_test_recall": 0.9130434782608695,
+  "recommended_threshold": 0.05747037351326509,
+  "recommended_threshold_source": "zero-false-negative point on training-set OOF predictions",
+  "recommended_threshold_test_precision": 0.8679245283018868,
+  "recommended_threshold_test_recall": 1.0,
+  "recommended_threshold_test_false_negatives": 0,
+  "recommended_threshold_test_false_positives": 7,
+  "caveat": "This threshold caught all malignant cases in this particular test split (46 cases; exact 95% CI for sensitivity 92.3-100%), but it is set by a single training patient, varies across CV shuffles, and did not give zero misses on the later temporal cohort. It is specific to this dataset and would need to be re-tuned (via the same train-only procedure) on new data, not reused as a fixed clinical cutoff."
+}
